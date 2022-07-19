@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Footer from '../components/Footer'
+import NavMenu from '../components/NavMenu'
 
 export default function Home() {
   return (
@@ -10,6 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <NavMenu></NavMenu>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -68,6 +71,7 @@ export default function Home() {
           </Link>
 
         </div>
+        <Footer/>
       </main>
 
       <footer>
