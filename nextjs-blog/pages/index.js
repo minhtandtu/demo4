@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -45,6 +46,27 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          <a
+            href="/about"
+            className="card"
+          >
+            <h3>About Us &rarr;</h3>
+            <p>
+              Go to see us. Using {' <a> '} tag
+            </p>
+          </a>
+          <Link href="/coders">
+          <a
+            
+            className="card"
+          >
+            <h3>All Coders &rarr;</h3>
+            <p>
+              Using Link tag
+            </p>
+          </a>
+          </Link>
+
         </div>
       </main>
 
